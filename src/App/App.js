@@ -3,11 +3,7 @@ import './App.scss';
 
 class App extends Component {
   render() {
-    return (
-      <div data-testid="app" className="App">
-        Hello World
-      </div>
-    );
+    return <div data-testid="app" className="App" />;
   }
 }
 
