@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Group from './components/Group';
+import Student from './components/Student';
 import './App.scss';
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div data-testid="app" className="App">
         <Group />
+        <Student />
       </div>
     );
   }
