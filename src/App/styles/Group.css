@@ -1,14 +1,20 @@
+.group {
+  width: 900px;
+  height: 900px;
+  background-color: #ededed;
+}
+
 .title {
   font-weight: bold;
   font-size: 20px;
+  float: left;
 }
 
 .operate button {
-  width: 80px;
+  width: 130px;
   height: 35px;
   background-color: rgb(232, 85, 89);
   color: #ffffff;
-  border-radius: 5px;
   border: none;
   float: right;
 }
