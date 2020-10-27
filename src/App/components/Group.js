@@ -11,6 +11,16 @@ class Group extends Component {
             分组学员
           </button>
         </div>
+        <div className="list">
+          <div className="divideGroup">
+            <div className="groupTitle">1组</div>
+            <div className="groupContent">
+              <div className="member">1.成吉思汗</div>
+              <div className="member">2.成吉思汗</div>
+              <div className="member">3.成吉思汗</div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
