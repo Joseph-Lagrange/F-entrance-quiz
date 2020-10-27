@@ -30,12 +30,22 @@ class Group extends Component {
       });
   }
 
+  handler() {
+    fetch(URL)
+      .then((response) => response.json())
+      .then((result) => {
+        this.setState({
+          data: result.group,
+        });
+      });
+  }
+
   render() {
     return (
       <div className="group">
         <div className="title">分组列表</div>
         <div className="operate">
-          <button type="submit" className="button primary">
+          <button type="submit" className="button primary" onClick={() => this.handler()}>
             分组学员
           </button>
         </div>
