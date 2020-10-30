@@ -4,6 +4,7 @@ import '../styles/Group.css';
 const URL = 'http://localhost:8080/student/divide';
 
 class Group extends Component {
+  // TODO GTB-工程实践: - 因为没有提取共用方法导致重复代码
   static checkStatus(response) {
     if (response.status >= 200 && response.status < 300) {
       return response;
@@ -50,6 +51,7 @@ class Group extends Component {
           </button>
         </div>
         <div className="list">
+          {/* TODO GTB-知识点: - 列表数据建议使用数组结构更好操作 */}
           {Object.keys(this.state.data).map((key) => (
             <div key={key}>
               <div className="divideGroup">
